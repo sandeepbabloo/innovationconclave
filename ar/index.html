@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head >
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Agumented Reality</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="form2/css/style.css">
+
+    <!-- Resource style -->
+    <script src="assets/js/mordernizr.js"></script>
+
+
+    
+    <style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.buttn:hover{
+background-color:#e83e8c !important;
+}
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+.section-title:before {
+  background-color:white !important;
+}
+.section-title:after {
+  background-color:white !important;
+}
+.turqoise{
+  background-color: #58638F !important;
+}
+.light-blue{
+  background-color: #3D4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner.light-blue::after {
+    border-right-color: #3d4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::after {
+
+    top: 43px !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::before {
+    border-width: 0px 0px 0px 0 !important;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::before {
+    border-width: 0px 0 0px 0px;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::after {
+    border-left-color: #58638f !important;
+}
+.schedule .schedule-tab-title .nav-tabs .nav-link {
+    border-radius: 0px;
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    width: 269px;
+    border-bottom: 1px solid #e5e5e5;
+    transition: all 500ms ease;
+    padding: 10px; 
+}
+button{
+  padding:10px;
+  background-color: #6674A3;
+  width:150px;
+}
+label{
+  color:white;
+  text-align:left;
+}
+.form-control{
+  background-color:transparent !important;
+}
+ul{
+  overflow-x:hidden !important;
+  overflow-y: hidden !important;
+}
+@media screen and (max-width: 768px){
+.navbar-brand img {
+    width: 35%;
+}
+}
+.navbar-brand img {
+    width: 20% !important;
+}
+</style>
+  </head>
+  <body>
+    <header id="header-wrap">
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/esummit.png" width="50px" id="logo" style="display:none"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  schedules
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#sponsors">
+                  Sponsors
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">
+                  Faq
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="mobile-menu">
+          <li>
+            <a class="page-scrool" href="#header-wrap">Home</a>
+          </li>
+          <li>
+            <a class="page-scrool" href="#about">About</a>
+          </li>
+          <li>
+             <a class="page-scroll" href="#schedules">schedules</a>
+          </li>
+
+          <!-- <li>
+            <a class="page-scroll" href="#sponsors">Sponsors</a>
+          </li> -->
+          <li>
+            <a class="page-scroll" href="#faq">Faq</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../workshop_original/images/ar.jpg" alt="First slide">
+            <div class="carousel-caption d-md-block row" style="top:100px">
+              <div class="col-md-4">  
+                <p class="fadeInUp wow" data-wow-delay=".6s">E-Cell IIT Bombay presents </p>
+                <h1 class="wow fadeInDown heading" data-wow-delay=".4s">Agumented Reality</h1>
+
+                <h6 class="wow fadeInDown " data-wow-delay=".4s">19th-20th Jan 19 | IIT Bombay</h6>
+
+                <a href="https://www.collegefever.com/events/e-summit19-I6KhUY7A3" target="_blank"><button>Register</button></a>               
+              </div>
+              <div class="col-md-4">  
+              
+              </div>
+ 
+            </div>
+          </div>
+         
+        </div>
+       
+      </div>
+      
+
+    </header>
+    <header class="site-header" style="display:none">
+
+
+                    <div class="custom-options">
+                        <div class="animation-selector">
+                            <select class="select-animation" id="select-animation">
+                                <!-- <option value="">No Animation</option> -->
+
+                                <!-- <optgroup label="Sliding effects"> -->
+                                    <option value="slideInUp">slideInUp</option>
+
+                                <!-- </optgroup> -->
+
+                            </select>
+                        </div>
+                        <!-- .animation-selector -->
+                        <ul class="button-group style-class-switch">
+                            <li class="active"><a href="#" data-styleclass="right-align">Alternate</a></li>
+                            <!-- <li><a href="#" data-styleclass="alternate">Right</a></li>
+                            <li><a href="#" data-styleclass="left-align">Left</a></li> -->
+                        </ul>
+                        <div class="check-style" style="display:none;visibility:hidden">
+                            <label for="dateToggle">
+                                <input type="checkbox" name="dateToggle" id="dateToggle" checked=""> <span></span> Show Date Opposite </label>
+                        </div>
+
+                    </div>
+                    <!-- .custom-options -->
+                </div>
+                <!-- .container -->
+            </div>
+                    <!-- .style-switch -->
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .header-top -->
+
+            <!-- .header-cutomizations -->
+        </header>
+    <section id="about" class="section-padding" style="background-color:#221D3D">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title" data-wow-delay="0.2s" style="color:white !important">About Agumented Reality</h1>
+              <h6  data-wow-delay="0.2s" style="padding:20px;color:white !important">Augmented Reality is a technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view. With the help of advanced AR technology, the information about the surrounding real world of the user becomes interactive and digitally manipulable. This information can be virtual or real, e.g. seeing other real sensed or measured information such as electromagnetic radio waves overlaid in exact alignment with where they actually are in space.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 text-lg-left text-center" style="padding-top:20px;text-align:center !important">       
+              <h2>
+              Registration
+            </h2>
+
+            <p>
+               Registration fee <span style="font-size: 25px;"><b>Rs 1300/-</b> per participant</span>
+            </p>
+            <p>
+              Free E-Summit'19 Professional pass worth INR 1300 /-.
+          </p>
+          <button style="width:150px">Register now</button>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why Participate?</h1>
+              <!-- <h6 class="wow fadeInDown" data-wow-delay="0.2s">National Level Hackathon</h6> -->
+            </div>
+          </div>
+        </div>
+        <div class="row services-wrapper">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <img src="images/Certified.png" width="100px">
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Certified Workshops</a></h3>
+                <p>All the participants wil be given E-cell, IIT Bombay signed certificates</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <img src="images/Passes.png" width="100px">
+              </div>
+              <div class="services-content">
+                <h3><a href="#">E-Summit Passes</a></h3>
+                <p>Free Proffesional Pass worth 1300 INR to experience the whole summit will be given</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12 padding-none">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <img src="images/Expert.png" width="100px">
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Mentoring</a></h3>
+                <p>Learn from experts in the fields</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedules" class="schedule section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Schedule</h1>
+ 
+            </div>
+          </div>
+        </div>
+        <div class="schedule-area row wow fadeInDown" data-wow-delay="0.3s">
+          <div class="schedule-tab-title col-md-3 col-lg-3 col-xs-12">
+            <div class="table-responsive">
+              <ul class="nav nav-tabs" id="myTab" role="tablist" style="background-color:transparent">
+                <li class="nav-item">
+                  <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                    <div class="item-text">
+                      <h4>Session 1</h4>
+                      <!-- <h5>14 February</h5> -->
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                    <div class="item-text">
+                      <h4>Session 2</h4>
+                      <!-- <h5>15 February</h5> -->
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday">
+                    <div class="item-text">
+                      <h4>Session 3</h4>
+                      <!-- <h5>16 February</h5> -->
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#thursday" role="tab" aria-controls="thursday">
+                    <div class="item-text">
+                      <h4>Session 4</h4>
+                      <!-- <h5>17 February</h5> -->
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="schedule-tab-content col-md-9 col-lg-9 col-xs-12 clearfix">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                <div id="accordion">
+                  <div class="container">
+                    <div  class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold;text-align:center;padding-top:20px">SESSION 1</h5>
+                      <p style="padding:20px;">
+                        ● What is Augmented Reality?<br>
+                        ● Introduction to Unity Software<br>
+                        ● Difference between 3D game object and 2D Sprite Concepts<br>
+                        ● Working of Unity Game Engine<br>
+                        ● A look at different Augmented Reality Tools<br>
+                        ● Application of Augmented Platforms<br>
+                        ● Requirements for working with AR platform<br>
+                        ● Downloading and installing Unity software
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+               <div class="tab-pane fade " id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                <div id="accordion">
+                    <div  class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold;text-align:center;padding-top:20px">SESSION 2</h5>
+                      <p style="padding:20px;">
+                        ● Introduction to 3D GameObjects in Unity<br>
+                        ● Importing the 3D Gameobjects inside the Game<br>
+                        ● Readjusting the position, shape and rotation of GameObjects<br>
+                        ● Developing and writing scripts for different GameObjects<br>
+                        ● Creating Parent and Child GameObjects<br>
+                        ● Adding Color to Individual GameObjects<br>
+                        ● Setting Background Image to GameObjects<br>
+                        ● Creating Prefabs from Existing GameObjects<br>
+                        ● Attaching Scripts to GameObjects and playing the Game.<br>
+                        ● Installation & Setting up a Vuforia SDK <br>
+
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+              <div class="tab-pane fade " id="wednesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                <div id="accordion">
+                    <div  class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold;text-align:center;padding-top:20px">SESSION 3</h5>
+                      <p style="padding:20px;">
+                        ● Introduction to Vuforia AR Camera<br>
+                        ● Taking a perfect image for Augmented Reality development<br>
+                        ● Modifying the image for a better purpose<br>
+                        ● The 5-star image concept<br>
+                        ● Tracking a 3D Cube on a Real World Image<br>
+                        ● Tracking a Spinning cube with Scripting<br>
+                        ● Cylindrical target detection <br>
+
+
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade " id="thursday" role="tabpanel" aria-labelledby="thursday-tab">
+                <div id="accordion">
+                    <div  class="container" style="text-align:left;">
+                      <h5 style="font-weight:bold;text-align:center;padding-top:20px">SESSION 4</h5>
+                      <p style="padding:20px;">
+                        ● Multi Image Targets in Vuforia<br>
+                          ● Interacting with Image Targets using Virtual Button in Vuforia<br>
+                          ● User Defined Image Targets in Vuforia<br>
+                          ● Convert any object into Image Target<br>
+                          ● Playing a Holographic video in Augmented World<br>     
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="sponsors" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">OutReach Partners</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12" style="text-align:center">
+              <a href="#"><img class="img-fluid" src="assets/img/sponsors/fb.png" width="20%  "></a>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section> -->
+    <!-- Sponsors Section End -->
+
+    <!-- Ask Question Section Start -->
+    <section id="faq" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">Have Question?</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i> This workshop is for whom ?
+                  </div>
+                </div>
+                <div id="questionOne" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                   These workshops are relevant for students, startups & professionals and don’t require any prerequisites.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i> What would the workshops focus on ?
+
+
+                    </div>
+                </div>
+                <div id="questionTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                    All of them would focus more on discussion and hands on rather than just lectures
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionFour" aria-expanded="false" aria-controls="questionFour">
+                   <i class="lni-pencil"></i> Would we get certificates at the end of the workshop ?
+
+                  </div>
+                </div>
+                <div id="questionFour" class="collapse" aria-labelledby="headingThree" data-parent="#question">
+                  <div class="card-body">
+                    Yes, certificates would be given at the end of each workshop.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne2">
+                  <div class="header-title" data-toggle="collapse" data-target="#questionOne2" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="lni-pencil"></i>Any payments other than workshop fees?
+                  </div>
+                </div>
+                <div id="questionOne2" class="collapse" aria-labelledby="headingOne" data-parent="#question">
+                  <div class="card-body">
+                    No, upon registration of any of the workshops there is no need to pay for E-Summit entry fees. Along with the workshop you register for, you can attend any event during the summit.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo2">
+                    <div class="header-title" data-toggle="collapse" data-target="#questionTwo2" aria-expanded="false" aria-controls="questionTwo">
+                      <i class="lni-pencil"></i> Is accomodation and food available ?
+                    </div>
+                </div>
+                <div id="questionTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#question">
+                  <div class="card-body">
+                    Yes, accommodation & food are available but you have to pay separately for them, which would be provided for 18, 19 & 20 January.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <section id="contact" class="section-padding" style="background-color:#221D3D;padding-bottom:0px">
+
+    <div class="container">
+          <div class="col-md-12"><h1 style="padding:50px;text-align:center;color:white">Contact Us</h1></div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row" style="text-align:center;">
+              <div class="col-md-6">
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">Shrvan Amlekar</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">9970192562</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">shrvan@ecell.in</p>
+                <br>
+              </div>
+              <div class="col-md-6">
+                <form action="" style="width:100%">
+                    
+                    <div class="form-group">
+                      <div class="form-wrapper">
+                          <label for="">Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                        <div class="form-wrapper">
+                        <label for="">E-Mail</label>
+                          <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-wrapper">
+                      <label for="">Message</label>
+                      <textarea rows="4" type="text" class="form-control">
+                      </textarea>
+                    </div>
+                    <button>Submit</button>
+                </form> 
+              </div>
+          </div>
+          </div>
+          <div class="col-md-12" style="text-align:center;background-color:#6674A3;padding:20px;margin-top:150px;border-radius:10px 10px 0px 0px;bottom:0px">
+            <div class="row">
+              <div class="col-md-4">
+                <p style="color:white;font-size:18px">For sponsorship Opportunities<br>marketing@ecell.in</p>
+              </div>
+              <div class="col-md-4" style="padding-top:10px">
+              <p style="color:white;font-size:18px">For Speaking Opportunities<br>speaking@ecell.in</p>
+              </div>
+              <div class="col-md-4" style="padding-top:10px">
+              <p style="color:white;font-size:18px">For Association Opportunities<br>associate@ecell.in</p>
+              </div>
+            </div>
+              <p style="color:#221D3D;margin:0;font-weight:600" style="padding-top:10px">THE ENTREPRENEURSHIP CELL,IIT BOMBAY</p>
+              <p style="color:white;font-size:18px" style="padding-top:10px">&#169; Team 2018-19</p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a>
+  </section> 
+    <!-- Footer Section End -->
+
+<!--     <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="site-info">
+              <p>© Designed and Developed by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+            </div>      
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- <div id="preloader">
+      <div class="sk-circle">
+        <div class="sk-circle1 sk-child"></div>
+        <div class="sk-circle2 sk-child"></div>
+        <div class="sk-circle3 sk-child"></div>
+        <div class="sk-circle4 sk-child"></div>
+        <div class="sk-circle5 sk-child"></div>
+        <div class="sk-circle6 sk-child"></div>
+        <div class="sk-circle7 sk-child"></div>
+        <div class="sk-circle8 sk-child"></div>
+        <div class="sk-circle9 sk-child"></div>
+        <div class="sk-circle10 sk-child"></div>
+        <div class="sk-circle11 sk-child"></div>
+        <div class="sk-circle12 sk-child"></div>
+      </div>
+    </div> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/form-validator.min.js"></script> -->
+    <!-- <script src="assets/js/contact-form-script.min.js"></script> -->
+<!--     <script src="assets/js/map.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery-3.1.1.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel-3.0.6.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/frst-timeline.js"></script> -->
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+ function chng(evt,datE,Bttn){
+        var dates;
+        var i;
+        var j;
+        dates=document.getElementsByClassName("date");
+        for(i=0;i<dates.length;i++){
+          dates[i].style.display="none";
+        }
+        buttons=document.getElementsByClassName("buttn");
+        for(j=0;j<dates.length;j++){
+          buttons[j].style.backgroundColor="#6674A3";
+        }
+        document.getElementById(Bttn).style.backgroundColor="#e83e8c";
+        document.getElementById(datE).style.display="block";
+        
+      }
+        
+		(function($){
+			$(document).ready(function (){				
+				$("#side-menu-content").mCustomScrollbar({
+					theme:"rounded-dots",
+					scrollInertia:800
+				});
+				
+			});
+		})(jQuery);
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+    <script>
+  var $logo1 = $('#logo');
+$(document).scroll(function() {
+
+    $logo1.css({display: ($(this).scrollTop()>80) ? "block":"none"});
+});
+
+</script> 
+  </body>
+</html>

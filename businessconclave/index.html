@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Business Conclave | E-Summit 19</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/slicknav.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/main.css">
+
+    <link rel="stylesheet" href="../ar/form2/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../ar/assets/css/responsive.css">
+    <!-- <link rel="favicon" href="favicon.ico"> -->
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/plugins/jquery.mCustomScrollbar.min.css">
+    <!-- CSS Animation -->
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/default.min.css">
+    <!-- Resource style -->
+    <!-- <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/demo/demo.css"> -->
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/frst-timeline-style-3.css">
+    <!-- Resource style -->
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/modernizr.js"></script>
+    <!-- <link rel="stylesheet" href="https://ecell.in/esummit/summit_final/hamburger1/css/core-style.css"> -->
+    <link rel="stylesheet" href="https://ecell.in/esummit/summit_final/hamburger1/style.css">
+    <!-- <link rel="stylesheet" href="https://ecell.in/esummit/summit_final/card3/css/style.css"> -->
+    <link href="https://ecell.in/esummit/summit_final/hamburger1/css/responsive.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://ecell.in/esummit/summit_final/card10/css/style.css">
+  <link rel="stylesheet" href="https://ecell.in/esummit/summit_final/card9/css/style.css">
+    <style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+.section-title:before {
+  background-color:white !important;
+}
+.section-title:after {
+  background-color:white !important;
+}
+.turqoise{
+  background-color: #58638F !important;
+}
+.light-blue{
+  background-color: #3D4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner.light-blue::after {
+    border-right-color: #3d4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::after {
+
+    top: 43px !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::before {
+    border-width: 0px 0px 0px 0 !important;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::before {
+    border-width: 0px 0 0px 0px;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::after {
+    border-left-color: #58638f !important;
+}
+li{
+	text-align:center;
+}
+h4{
+	font-size:13px !important;
+}
+.schedule .schedule-tab-title .nav-tabs .nav-link {
+	height:50px;
+}
+#myTab{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color:transparent;
+}
+.tab-pane{
+	padding:10px;
+}
+.form-control{
+  background-color:#221D3D !important;
+  color:white !important;
+}
+label{
+	color:white;
+	text-align:left;
+}
+button{
+  padding:10px;
+  background-color: #6674A3;
+}
+.form-control{
+  background-color:transparent !important;
+}
+@media screen and (max-width: 768px){
+.navbar-brand img {
+    width: 35% !important;
+}
+button{
+	background-color:#6674a3 !important;
+}
+}
+.navbar-brand img {
+    width: 25% !important;
+}
+/*.spnsors-logo1{
+  height:250px;
+}*/
+.spnsors-logo{
+	height:250px !important;
+}
+  #sponsors .spnsors-logo{
+     margin-bottom:0px !important; 
+  
+    width: 100%;
+}
+.img-fluid {
+    /* max-width: 100%; */
+    /* height: auto; */
+    max-height: 100%;
+    max-width: 65%;
+    /* width: auto; */
+    /* height: auto; */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+</style>
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="https://ecell.in/esummit" class="navbar-brand" ><img src="assets/img/esummit.png" alt="" style="display:none" id="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#header-wrap">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#schedules">
+                  schedule
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#team">
+                  Speakers
+                </a>
+              </li> -->
+             <!--  <li class="nav-item">
+                <a class="nav-link" href="#gallery">
+                  Gallery
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">
+                  Faq
+                </a>
+              </li>
+             <!--  <li class="nav-item">
+                <a class="nav-link" href="#sponsors">
+                  Sponsors
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#pricing">
+                  pricing
+                </a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+          <li>
+            <a class="page-scrool" href="#header-wrap">Home</a>
+          </li>
+          <li>
+            <a class="page-scrool" href="#about">About</a>
+          </li>
+          <li>
+             <a class="page-scroll" href="#schedules">schedule</a>
+          </li>
+         <!--  <li>
+            <a class="page-scroll" href="#team">Speakers</a>
+          </li> -->
+         <!--  <li>
+            <a class="page-scroll" href="#gallery">Gallery</a>
+          </li>
+          <li> -->
+            <a class="page-scroll" href="#faq">Faq</a>
+          </li>
+<!--           <li>
+            <a class="page-scroll" href="#sponsors">Sponsors</a>
+          </li> -->
+         <!--  <li>
+            <a class="page-scroll" href="#pricing">pricing</a>
+          </li>
+          <li> -->
+            <a class="page-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Main Carousel Section Start -->
+      <div id="main-slide" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <!-- <li data-target="#main-slide" data-slide-to="0" class="active"></li> -->
+<!--           <li data-target="#main-slide" data-slide-to="1"></li>
+          <li data-target="#main-slide" data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-item active" style="height:100vh">
+            <img class="d-block w-100" src="https://ecell.in/esummit/workshops/images/cover.png" alt="First slide" style="height:100vh">
+            <div class="carousel-caption d-md-block" style="top:150px">
+              <div class="row">
+              <div class="col-md-6 down">  
+                <p class="fadeInUp wow" data-wow-delay=".6s">E-Cell, IIT Bombay presents </p>
+                <h1 class="wow fadeInDown heading" data-wow-delay=".4s">competitions</h1>
+                <h6 class="wow fadeInDown " data-wow-delay=".4s">19th-20th Jan 19 | IIT Bombay</h6>
+                <a href="https://www.thecollegefever.com/events/e-summit19-I6KhUYb7A3" target="_blank"><button style="width:150px">Register</button></a>              
+              </div>
+              <div class="col-md-6 up">  
+                  <img class="d-block w-100" src="images/cover_small.png" alt="First slide">               
+              </div>
+            </div>
+            </div>
+          </div>
+      <!-- Main Carousel Section End -->
+
+    </header>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+   
+    <section id="schedules" class="schedule section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">SCHEDULE</h1>
+
+            </div>
+          </div>
+        </div>
+        <section id="section3" class="cd-section" style="background-image:url('images/BG_Light.png');background-size:200px">
+
+    <div class="karl-projects-menu" style="padding:50px">
+                <div class="text-center portfolio-menu">
+                    <button class="btn active" data-filter="*" style="width:120px;padding:5px">ALL</button>
+                    <button class="btn" data-filter=".startup" style="width:120px;padding:5px">STARTUP</button>
+                    <button class="btn" data-filter=".student" style="width:120px;padding:5px">STUDENT</button>
+                    <button class="btn" data-filter=".prof" style="width:120px;padding:5px">PROFFESIONAL</button>
+                </div>
+            </div>
+            <div class="container">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                  <div class="row karl-new-arrivals">
+                      <div class="col-12 col-sm-6 col-md-4 single_gallery_item  student" style="text-align:center">
+                          <div class="product-img">
+                          <a href="#" class="card credentialing" style="background-color:transparent;">
+                             <div class="card-face face-1"><!-- Menu trigger -->
+                    
+                              <div class="card-face__avatar"><!-- Bullet notification --><span class="card-face__bullet">in</span><!-- User avatar -->
+                                <img src="https://www.ecell.in/esummmit/images/speakers/travis.jpg" width="160" height="160" draggable="false"/></div><!-- Name -->
+                                  <h2 class="card-face__name">Travis Kalanick</h2><!-- Title --><span class="card-face__title">Founder<br>Uber</span><!-- Cart Footer -->
+                      
+                                 <button id="seven" class="button5" style="line-height:1.0;font-size:0.8rem;margin-top:8px">More Info</button>
+                              </div>
+                          </a>
+                        </div>
+                        
+                      </div>
+                     
+                        
+
+                  </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+  </section>
+</div>
+
+</section>
+       <!--  <section id="sponsors" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-header text-center">
+              <h1 class="section-title wow fadeInUp" data-wow-delay="0.2s">OutReach Partners</h1>
+              <p class="wow fadeInDown" data-wow-delay="0.2s"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3" style="text-align:center">
+              <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="images/microsoft.png"></a>
+            </div>
+          </div>
+          <div class="col-3" style="text-align:center">
+              <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="images/techobyte.png"></a>
+            </div>
+          </div>
+          <div class="col-3" style="text-align:center">
+              <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="images/growisto.png" ></a>
+            </div>
+          </div>
+          <div class="col-3" style="text-align:center">
+              <div class="spnsors-logo">
+              <a href="#"><img class="img-fluid" src="images/chatur.png"></a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </section> -->
+    <div id="page">
+
+        </div>
+        <div class="site-header" style="display:none">
+           
+                              
+                    <div class="custom-options">
+                        <div class="animation-selector">
+                            <select class="select-animation" id="select-animation">
+                                <!-- <option value="">No Animation</option> -->
+                                
+                                <!-- <optgroup label="Sliding effects"> -->
+                                    <option value="slideInUp">slideInUp</option>
+                                    
+                                <!-- </optgroup> -->
+                               
+                            </select>
+                        </div>
+                        <!-- .animation-selector -->
+                        <ul class="button-group style-class-switch">
+
+                        </ul>
+                        <div class="check-style" style="display:none;visibility:hidden">
+                            <label for="dateToggle">
+                                <input type="checkbox" name="dateToggle" id="dateToggle" checked=""> <span></span> Show Date Opposite </label>
+                        </div>
+                        
+                    </div>
+                    <!-- .custom-options -->
+                </div>
+                <!-- .container -->
+            </div>
+                    <!-- .style-switch -->
+                </div>
+
+            </div>
+
+
+           <section id="contact" class="section-padding" style="background-color:#221D3D;padding-bottom:0px">
+
+    <div class="container">
+          <div class="col-md-12"><h1 style="padding:50px;text-align:center;color:white">Contact Us</h1></div>
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="row" style="text-align:center;">
+              <div class="col-md-6" style="text-align:left">
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">Harsh Jain</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">9326006462</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">harshjain@ecell.in</p>
+                <br>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">E-Cell Office</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">Student Activity Center</p>
+                <p style="margin:0px;line-height:1.5;font-size:1.0rem;color:white">IIT,Powai</p>
+              </div>
+              <div class="col-md-6">
+                <form action="../register/php/email-sender.php" method="post" style="width:100%">
+                    
+                    <div class="form-group">
+                      <div class="form-wrapper">
+                          <label for="">Name</label>
+                          <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="form-wrapper">
+                        <label for="">E-Mail</label>
+                          <input type="text" class="form-control" name="email">
+                      </div>
+                    </div>
+                    <div class="form-wrapper">
+                      <label for="">Message</label>
+                      <textarea rows="4" type="text" class="form-control" name="message">
+                      </textarea>
+                    </div>
+                    <button style="background-color:#6674a3;padding:10px">Submit</button>
+                </form> 
+              </div>
+          </div>
+          </div>
+          <div class="col-md-12" style="text-align:center;background-color:#6674A3;padding:20px;margin-top:150px;border-radius:10px 10px 0px 0px">
+            <div class="row">
+              <div class="col-md-4">
+                <p style="color:white;font-size:18px">For sponsorship Opportunities<br>marketing@ecell.in</p>
+              </div>
+              <div class="col-md-4" style="padding-top:10px">
+              <p style="color:white;font-size:18px">For Speaking Opportunities<br>speaking@ecell.in</p>
+              </div>
+              <div class="col-md-4" style="padding-top:10px">
+              <p style="color:white;font-size:18px">For Association Opportunities<br>associate@ecell.in</p>
+              </div>
+            </div>
+              <p style="color:#221D3D;margin:0;font-weight:600" style="padding-top:10px">THE ENTREPRENEURSHIP CELL,IIT BOMBAY</p>
+              <p style="color:white;font-size:18px" style="padding-top:10px">&#169; Team 2018-19</p>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <a href="#" class="back-to-top">
+    	<i class="lni-chevron-up"></i>
+    </a>
+  </section> 
+    <script src="../ar/assets/js/jquery-min.js"></script>
+    <script src="../ar/assets/js/popper.min.js"></script>
+    <script src="../ar/assets/js/bootstrap.min.js"></script>
+    <script src="../ar/assets/js/jquery.countdown.min.js"></script>
+    <script src="../ar/assets/js/jquery.nav.js"></script>
+    <script src="../ar/assets/js/jquery.easing.min.js"></script>
+    <script src="../ar/assets/js/wow.js"></script>
+    <script src="../ar/assets/js/jquery.slicknav.js"></script>
+    <script src="../ar/assets/js/nivo-lightbox.js"></script>
+    <script src="../ar/assets/js/main.js"></script>
+    <!-- <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery-3.1.1.min.js"></script> -->
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel-3.0.6.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/frst-timeline.js"></script>
+    <script src="https://ecell.in/esummit/summit_final/hamburger1/js/popper.min.js"></script>
+    <script src="https://ecell.in/esummit/summit_final/hamburger1/js/plugins.js"></script>
+    <script src="https://ecell.in/esummit/summit_final/hamburger1/js/active.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- <script src="assets/js/form-validator.min.js"></script> -->
+    <!-- <script src="assets/js/contact-form-script.min.js"></script> -->
+   <!--  <script src="assets/js/map.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery-3.1.1.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel-3.0.6.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/frst-timeline.js"></script> -->
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+ function chng(evt,datE){
+        var dates;
+        var i;
+        dates=document.getElementsByClassName("date");
+        for(i=0;i<dates.length;i++){
+          dates[i].style.display="none";
+        }
+        document.getElementById(datE).style.display="block";
+        
+      }
+        
+		(function($){
+			$(document).ready(function (){				
+				$("#side-menu-content").mCustomScrollbar({
+					theme:"rounded-dots",
+					scrollInertia:800
+				});
+				
+			});
+		})(jQuery);
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ <script>
+  var $logo1 = $('#logo');
+$(document).scroll(function() {
+
+    $logo1.css({display: ($(this).scrollTop()>80) ? "block":"none"});
+});
+
+</script> 
+  </body>
+</html>
